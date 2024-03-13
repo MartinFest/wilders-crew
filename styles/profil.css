@@ -6,6 +6,7 @@
     --first-color : red;
     --second-color: ;
     --light-color: ;
+    --citation-color : #906044;
 
     /* fonts */
     --title-font : "Playfair Display", serif; 
@@ -13,7 +14,7 @@
     --name-size : 64px;
     --title-size : 40px;
     --citation-size : 20px;
-    --text-size : 20px;
+    --text-size : 18px;
 }
 
 /* Global */
@@ -26,7 +27,7 @@
 
 header {
     background-color : red;
-    height : 70px;
+    height : 130px;
 }
 
 /* Body */
@@ -43,8 +44,7 @@ body>main {
     padding : 2rem;
     display : grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows : repeat(3, 33%);
-    gap: 0px 40px;
+    /* grid-template-rows : repeat(3, 33%); */
 }
 
 /* Identification sections */
@@ -83,15 +83,27 @@ body>main {
     align-items: top;
 }
 
-#profil-name>h1 {
+#profil-name>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profil-name>div>img {
+    width : 84px;
+    height : 114px;
+}
+
+#profil-name>div>h1 {
     font-size : var(--name-size);
     margin: 0;
 }
 
 #profil-name>p {
-    margin: 0;
+    margin: 0 100px;
     font-size : var(--citation-size);
     font : var(--text-font);
+    color : var(--citation-color);
 }
 
 #profil-description {
@@ -111,6 +123,11 @@ body>main {
 /* Diagram section */
 
 /* Objectifs section */
+
+.objectifs>div {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .profil-objectifs>div {
     display : flex;
