@@ -1,43 +1,59 @@
-/* Variables */
+/* ----Variables---- */
 
 :root {
 
-    /* colors */
-    --first-color : red;
-    --second-color: ;
+    /* ----colors---- */
+    --name-color : #2E241B;
+    --background-color: #D9D9D9;
     --light-color: ;
     --citation-color : #906044;
 
-    /* fonts */
+    /* ----fonts---- */
     --title-font : "Playfair Display", serif; 
     --text-font : "Lato", sans-serif;
-    --name-size : 64px;
+    --name-size : 70px;
     --title-size : 40px;
     --citation-size : 20px;
     --text-size : 18px;
 }
 
-/* Global */
+/* ----Global---- */
 
 * {
     box-sizing : border-box;
 }
 
-/* header */
+/* ----header---- */
 
 header {
     background-color : red;
     height : 130px;
 }
 
-/* Body */
+/* ----global text---- */
 
 h1, h2 {
-    font : var(--title-font)
+    font-family : var(--title-font);
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 0; 
 }
+
+h1{
+    font-size : var(--name-size);
+    color: var(--name-color);
+}
+
+p, li {
+    font-size : var(--citation-size);
+    font-family : var(--text-font);
+}
+
+/* ----Body---- */
 
 body {
     margin : 0;
+    background-color: var(--background-color);
 }
 
 body>main {
@@ -47,92 +63,125 @@ body>main {
     /* grid-template-rows : repeat(3, 33%); */
 }
 
-/* Identification sections */
+    /* -start---Picture - Name - Citation - Description----- */
 
-.profil-identification {
+.profil-informations {
     grid-column : 1/4;
     grid-row : 1/3;
     display : grid;
-    grid-template-columns : repeat(5, 20%);
+    grid-template-columns : repeat(3, 1fr);
     grid-template-rows : repeat(6, 16.5%);
     height : 350px;
-}
+    }
 
-.diagram {
-    grid-column : 4/5;
-    grid-row : 1/4;
-}
+    #profil-picture {
+        grid-column : 1/2;
+        grid-row : 1/7;
+        width: 318px;
+        height: 318px;
+        border-radius: 50%;
+        background-image: url(https://via.placeholder.com/318x318);
+        justify-self: center;
+        align-self: center;
+    }
 
-.objectifs {
-    grid-column : 1/5;
+    #profil-name {
+        grid-column : 2/4;
+        grid-row : 1/3;
+    }
+
+    #profil-name>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #avatar-name {
+        width : 84px;
+        height : 114px;
+    }
+
+    #avatar-name>img{
+        width: 100%;
+    }
+
+    #profil-name>p {
+        margin: 0 100px;
+        color : var(--citation-color);
+    }
+
+    #profil-description {
+        grid-column : 2/4;
+        grid-row : 4/7;
+    }
+
+    #profil-description>h2 {
+        font-size: var(--title-size);
+        margin: 0;
+    }
+
+    #profil-description>p {
+        font-size : var(--text-size);
+    }
+
+    /* -end---Picture - Name - Citation - Description----- */
+
+    /* -start---Diagram section---- */
+
+    .diagram {
+        grid-column: 4/5;
+        grid-row: 1/4;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .diagram>span>img {
+        width: 318px;
+    }
+    
+    /* Objectifs section */
+
+    .final-bloc-profil {
+        grid-template-columns: repeat (3, 1fr);
+    }
+
+    .objectifs {
+    grid-column : 1/4;
     grid-row : 3/4;
-}
+    }
 
-#profil-picture {
-    clip-path: ellipse(35% 50%);
-    height : 318px;
-    position: absolute;
-    left : 0;
-    grid-column : 1/3;
-    grid-row : 1/7;
-}
 
-#profil-name {
-    grid-column : 3/6;
-    grid-row : 1/3;
-    align-items: top;
-}
-
-#profil-name>div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#profil-name>div>img {
-    width : 84px;
-    height : 114px;
-}
-
-#profil-name>div>h1 {
-    font-size : var(--name-size);
-    margin: 0;
-}
-
-#profil-name>p {
-    margin: 0 100px;
-    font-size : var(--citation-size);
-    font : var(--text-font);
-    color : var(--citation-color);
-}
-
-#profil-description {
-    grid-column : 3/6;
-    grid-row : 4/7;
-}
-
-#profil-description>h2 {
-    font-size: var(--title-size);
-    margin: 0;
-}
-
-#profil-description>p {
-    font-size : var(--text-size);
-}
-
-/* Diagram section */
-
-/* Objectifs section */
 
 .objectifs>div {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+
+.objectifs {
+    display : grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+#objectifs-tag-blocs {
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+
+#buttons-reseaux-blocs {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.profil-objectifs {
+    display: flex;
+    flex-direction: column;
 }
 
 .profil-objectifs>div {
-    display : flex;
+    display: flex;
     flex-direction: row;
-    gap : 20px;
 }
 
 .profil-tags>ul {
@@ -147,7 +196,8 @@ body>main {
 
 .social-networks>ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 .social-networks>ul>li {
@@ -157,9 +207,12 @@ body>main {
 
 .social-networks>ul>li>a>img {
     width : 50px;
-    display: flex;
-    flex-direction: row;
 }
 
+/* Scrollbar */
+
+.other-profiles>a>img {
+    width : 50px;
+}
 
 
