@@ -9,58 +9,71 @@
 </head>
 
 <body>
-    <nav>
-    </nav>
-    <h1>Créer un compte</h1>
+    <header>
+        <nav>
+        </nav>
+    </header>
 
     <main>
 
-        <section class="superMe">
-            <h2 class="titleAbout">A propos de moi</h2>
-            <img src="https://cdn.pixabay.com/photo/2014/10/01/12/34/grandmother-468480_960_720.jpg"
-                alt="photo de profil">
-
-            <input type="file">
-
-            <ul>
-                <li><input type="text"></li>
-                <li><input type="text"></li>
-                <li><input type="text"></li>
-                <li><input type="text"></li>
-            </ul>
-
-        </section>
-
-        <div>
-
-            <section class="superNetworks">
-                <h2 class="titleNetwork">Mes réseaux</h2>
-            </section>
-
-            <section class="superAvatar">
-                <h2 class="titleAvatar">Mes avatars</h2>
-                <input type="file">
-            </section>
-
+        <div class="wilder-photo">
+            <!--photo de profil-->
         </div>
 
-        <section class="skills">
-            <h2 class="superCompétences"> Mes compétences</h2>
+        <div class="info-bloc">
+            <form>
+                <label for="name">Nom </label><input type="text" id="name">
+                <label for="firstName">Prénom </label><input type="text" id="firstName">
+                <label>Email <input type="email" required></label>
+                <label>Date de naissance <input type="date"></label>
+            </form>
+        </div>
 
-            <ul class="listingSkills">
-                <li><input type="checkbox" id="superSkill1"><label for="superSkill1">HTML5</label></li>
-                <li><input type="checkbox" id="superSkill2"><label for="superSkill2">CSS3</label></li>
-                <li><input type="checkbox" id="superSkill3"><label for="superSkill3">JavaScript</label></li>
-                <li><input type="checkbox" id="superSkill4"><label for="superSkill4">React</label></li>
-                <li><input type="checkbox" id="superSkill5"><label for="superSkill5">SQL</label></li>
-                <li><input type="checkbox" id="superSkill6"><label for="superSkill6">Node.js</label></li>
-                <li><input type="checkbox" id="superSkill7"><label for="superSkill7">Python</label></li>
-                <li><input type="checkbox" id="superSkill8"><label for="superSkill8">Java</label></li>
-                <li><input type="checkbox" id="superSkill9"><label for="superSkill9">C</label></li>
-                <li><input type="checkbox" id="superSkill10"><label for="superSkill10">C++</label></li>
-            </ul>
+        <div class="network-bloc">
+            <form>
+                <label for="github">Github </label>
+                <input type="url" id="github">
+                <br>
+                <label for="linkedin">Linkedin </label>
+                <input type="url" id="linkedin">
+                <br>
+                <label for="twitter">Twitter </label>
+                <input type="url" id="x">
+                <br>
+                <label for="website">Site web </label>
+                <input type="url" id="website">
+            </form>
+            </section>
+        </div>
 
-        </section>
+
+        <div class="description-bloc">
+            <form>
+                <label>Qui suis-je ? <textarea id="messagePerso"></textarea></label>
+            </form>
+        </div>
+
+        <div class="ambition-bloc">
+            <label>Mes objectifs <textarea id="messagePro"></textarea>
+        </div>
+
+        <div class="hobbies-bloc">
+            <h2>Hobbies</h2>
+            <form>
+            </form>
+        </div>
+
+        <div class="compétences-bloc">
+            <h2>Compétences</h2>
+            <form id="skills">
+                <label for="level">HTML5 </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">CSS3 </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">JavaScript </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">React </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">SQL </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">Node.js </label><input type="range" id="level" name="level" min="0" max="10">
+            </form>
+        </div>
 
     </main>
 
