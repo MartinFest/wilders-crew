@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/signup-page.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="wilder-photo">
+            <img id="profil-picture">
+        </div>
+
+        <div class="info-bloc">
+            <form>
+                <label for="name">Nom </label>
+                <input type="text" id="name">
+                <br>
+                <label for="firstName">Prénom </label>
+                <input type="text" id="firstName">
+                <br>
+                <label for="email">Email </label>
+                <input type="email" id="email" required>
+                <br>
+                <label for="birthdate">Date de naissance </label>
+                <input type="date" id="birthdate">
+            </form>
+        </div>
+
+        <div class="network-bloc">
+            <form>
+                <label for="github">Github </label>
+                <input type="url" id="github">
+                <br>
+                <label for="linkedin">Linkedin </label>
+                <input type="url" id="linkedin">
+                <br>
+                <label for="twitter">Twitter </label>
+                <input type="url" id="x">
+                <br>
+                <label for="website">Site web </label>
+                <input type="url" id="website">
+            </form>
+            </section>
+        </div>
+
+
+        <div class="description-bloc">
+            <form>
+                <label>Qui suis-je ? <textarea id="messagePerso" rows="10" cols="33"></textarea></label>
+            </form>
+        </div>
+
+        <div class="ambition-bloc">
+            <label>Mes objectifs <textarea id="messagePro" rows="10" cols="33"></textarea>
+        </div>
+
+        <div class="hobbies-bloc">
+            <h2>Hobbies</h2>
+            <form>
+            </form>
+        </div>
+
+        <div class="compétences-bloc">
+            <h2>Compétences</h2>
+            <form id="skills">
+                <label for="level">HTML5 </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">CSS3 </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">JavaScript </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">React </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">SQL </label><input type="range" id="level" name="level" min="0" max="10">
+                <label for="level">Node.js </label><input type="range" id="level" name="level" min="0" max="10">
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

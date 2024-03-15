@@ -1,0 +1,95 @@
+nav {
+    height: 100px;
+    background-color: red;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 50px;
+    padding: 3rem;
+    background-color: #D9D9D9;
+}
+
+.wilder-photo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.info-bloc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.network-bloc {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.description-bloc {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.ambition-bloc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.hobbies-bloc {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.compétences-bloc {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+h2 {
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+#profil-picture {
+        width: 318px;
+        height: 318px; 
+        border-radius: 50%;
+        background-image: url(https://cdn.pixabay.com/photo/2024/02/21/22/16/ai-generated-8588724_960_720.png);
+        background-size: 318px;
+}
+
+#level {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-bloc > form {
+    display: flex;
+    flex-direction: column;
+}
+ .network-bloc > form {
+    display: flex;
+    flex-direction: column;
+ }
