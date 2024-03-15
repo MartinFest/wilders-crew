@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?l8so5b');
+  src: url('fonts/icomoon.eot?l8so5b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l8so5b') format('truetype'),
+    url('fonts/icomoon.woff?l8so5b') format('woff'),
+    url('fonts/icomoon.svg?l8so5b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icons-egypt-ailes:before {
+  content: "\e900";
+}
+
+.icon-icons-egypt-ailes2:before {
+  content: "\e901";
+}
+
+.icon-icons-egypt-croix:before {
+  content: "\e902";
+}
+
+.icon-icons-egypt-oeil:before {
+  content: "\e903";
+}
+
+.icon-icons-egypt-oeil2:before {
+  content: "\e904";
+}
+
+.icon-icons-egypt-pharaon-face:before {
+  content: "\e905";
+}
+
+.icon-icons-egypt-pharaon-face2:before {
+  content: "\e906";
+}
+
+.icon-icons-egypt-pharaon-profil:before {
+  content: "\e907";
+}
+
+.icon-icons-egypt-plumeau:before {
+  content: "\e908";
+}
+
+.icon-icons-egypt-plumeau2:before {
+  content: "\e909";
+}
+
+.icon-icons-egypt-pyramid:before {
+  content: "\e90a";
+}
+
+.icon-icons-egypt-scarabe:before {
+  content: "\e90b";
+}
+
+.icon-icons-egypt-scarabe2:before {
+  content: "\e90c";
+}
+
+.icon-icons-egypt-sceptre:before {
+  content: "\e90d";
+}
+
+.icon-icons-egypt-vase:before {
+  content: "\e90e";
+}
+
+.icon-icons-egypt-vase2:before {
+  content: "\e90f";
+}
+
+.icon-icons-detailles-egypt-ailes:before {
+  content: "\e910";
+}
+
+.icon-icons-detailles-egypt-ailes-vautour:before {
+  content: "\e911";
+}
+
+.icon-icons-detailles-egypt-femme-entiere:before {
+  content: "\e912";
+}
+
+.icon-icons-detailles-egypt-hieroglyphe:before {
+  content: "\e913";
+}
+
+.icon-icons-detailles-egypt-homme-entier:before {
+  content: "\e914";
+}
+
+.icon-icons-detailles-egypt-portrait-femme-profil:before {
+  content: "\e915";
+}
+
+.icon-icons-detailles-egypt-scarabe:before {
+  content: "\e916";
+}
+
+.icon-icons-detailles-egypt-seau-ibis:before {
+  content: "\e917";
+}
+
+.icon-icons-bird:before {
+  content: "\e918";
+}
+
+.icon-icons-chevron:before {
+  content: "\e919";
+}
+
+.icon-icons-codepen:before {
+  content: "\e91a";
+}
+
+.icon-icons-computer:before {
+  content: "\e91b";
+}
+
+.icon-icons-cookie:before {
+  content: "\e91c";
+}
+
+.icon-icons-flash:before {
+  content: "\e91d";
+}
+
+.icon-icons-github:before {
+  content: "\e91e";
+}
+
+.icon-icons-linkedin:before {
+  content: "\e91f";
+}
+
+.icon-icons-user:before {
+  content: "\e920";
+}
