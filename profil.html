@@ -8,15 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/icomoon/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <title>Profil - Julien Deniaud | Wilder Book</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-
+    <header class="container">
+        <nav class="navbar">
+            <a href="home.html" class="logo">
+                <span class="icon-icons-bird"></span>
+                <span class="logo-nom-container"><span class="logo-nom">Wilders Crew</span>
+                    <small class="signature-logo">Les super wilders</small></span>
+            </a>
+            <ul class="navbar-nav list-unstyled">
+                <li><a href="interne.html" class="taf">Accueil</a></li>
+                <li><a href="#">Notre promo</a></li>
+                <li><a href="#">Messagerie</a></li>
+            </ul>
+            <a href="#" class="btn-login"><span class="icon-icons-egypt-pharaon-profil"></span>
+                Connexion</a>
         </nav>
     </header>
 
@@ -64,10 +80,10 @@
         <section class="final-bloc-profil">
             <section class="buttons-reseaux-blocs">
                 <section class="buttons">
-                    <a id="contact-button" href="" alt="Vers la messagerie">
+                    <a id="contact- button" href="" class="btn btn-default" alt="Vers la messagerie">
                         Contact
                     </a>
-                    <a id="cv-button" href="" alt="Afficher le CV">
+                    <a id="cv- button" href="" class="btn btn-secondary" alt="Afficher le CV">
                         CV
                     </a>
                 </section>
@@ -77,7 +93,7 @@
                     </h2>
                     <ul>
                         <li id="github-profil">
-                            <a href="">
+                            <a href="" >
                                 <img id="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                                     alt="logo de Github">
                             </a>

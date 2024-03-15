@@ -3,7 +3,7 @@
 :root {
 
     /* ----colors---- */
-    --name-color : #2E241B;
+    /* --name-color : #2E241B;
     --background-color: #D9D9D9;
     --light-color: #FFFFFF;
     --heavy-color : #000000;
@@ -11,13 +11,13 @@
     --line-color : #A9A9A9;
 
     /* ----fonts---- */
-    --title-font : "Playfair Display", serif; 
+    /* --title-font : "Playfair Display", serif; 
     --text-font : "Lato", sans-serif;
     --name-size : 70px;
     --title-size : 40px;
     --citation-size : 20px;
     --text-size : 18px;
-    --link-size : 21px;
+    --link-size : 21px; */
 }
 
 /* ----Global---- */
@@ -28,26 +28,23 @@
 
 /* ----header---- */
 
-header {
-    background-color : red;
-    height : 130px;
-}
+
 
 /* ----global text---- */
 
-h1, h2 {
+/* h1, h2 {
     font-family : var(--title-font);
     font-weight: 400;
     word-wrap: break-word;
     margin: 0; 
-}
+} */
 
-h1{
+/* h1{
     font-size : var(--name-size);
     color: var(--name-color);
-}
+} */
 
-h2 {
+/* h2 {
     text-transform: uppercase;
 }
 
@@ -59,14 +56,14 @@ p, li {
 a {
     font-size : var(--link-size);
     font-family: var(--text-font);
-}
+} */
 
 /* ----Body---- */
 
-body {
+/* body {
     margin : 0;
     background-color: var(--background-color);
-}
+} */
 
 /* -start---Main---- */
 
