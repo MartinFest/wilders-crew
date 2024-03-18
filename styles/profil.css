@@ -1,74 +1,18 @@
-/* ----Variables---- */
-
-:root {
-
-    /* ----colors---- */
-    /* --name-color : #2E241B;
-    --background-color: #D9D9D9;
-    --light-color: #FFFFFF;
-    --heavy-color : #000000;
-    --citation-color : #906044;
-    --line-color : #A9A9A9;
-
-    /* ----fonts---- */
-    /* --title-font : "Playfair Display", serif; 
-    --text-font : "Lato", sans-serif;
-    --name-size : 70px;
-    --title-size : 40px;
-    --citation-size : 20px;
-    --text-size : 18px;
-    --link-size : 21px; */
-}
-
-/* ----Global---- */
-
-* {
-    box-sizing : border-box;
-}
-
-/* ----header---- */
-
-
-
-/* ----global text---- */
-
-/* h1, h2 {
-    font-family : var(--title-font);
-    font-weight: 400;
-    word-wrap: break-word;
-    margin: 0; 
-} */
-
-/* h1{
-    font-size : var(--name-size);
-    color: var(--name-color);
-} */
-
-/* h2 {
-    text-transform: uppercase;
-}
-
-p, li {
-    font-size : var(--text-size);
-    font-family : var(--text-font);
-}
-
-a {
-    font-size : var(--link-size);
-    font-family: var(--text-font);
-} */
-
-/* ----Body---- */
-
-/* body {
-    margin : 0;
-    background-color: var(--background-color);
-} */
-
 /* -start---Main---- */
 
+/* A supprimer plus tard */
+
+h1 {
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+h2 {
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+/* --------------------- */
 body>main {
-    padding : 1rem 2rem;
+    padding : 1.5rem 2rem 0rem 2rem;
     display : grid;
     grid-template-columns: repeat(4, 25%);
 }
@@ -93,7 +37,7 @@ body>main {
         background-image: url("/Assets/julien\ photo.jpg");
         background-size: 350px;
         justify-self: center;
-        align-self: flex-end;
+        /* align-self: flex-end; */
     }
 
     #profil-name {
@@ -119,22 +63,13 @@ body>main {
 
     #profil-name>p {
         margin: 0 100px;
-        color : var(--citation-color);
+        color : var(--primary-color);   
     }
 
     #profil-description {
         grid-column : 2/4;
         grid-row : 4/7;
         align-self: center;
-    }
-
-    #profil-description>h2 {
-        font-size: var(--title-size);
-        margin: 0;
-    }
-
-    #profil-description>p {
-        font-size : var(--text-size);
     }
 
     /* -end---Picture - Name - Citation - Description----- */
@@ -176,40 +111,19 @@ body>main {
         display: flex;
         justify-content: center;
         gap: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        word-wrap: break-word;
-    }
-
-    #contact-button {
-        color: var(--name-color);
-        padding: 10px 30px;
-        background-color: var(--light-color);
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        text-decoration: none;
-    }
-
-    #cv-button {
-        color: var(--light-color);
-        padding: 10px 30px;
-        background-color: var(--citation-color);
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        text-decoration: none;
     }
     
     .social-networks {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
     
     .social-networks>ul {
         display: flex;
         flex-direction: row-reverse;
         padding: 0;
+        margin: 0;
         gap: 20px;
     }
     
@@ -228,7 +142,7 @@ body>main {
         grid-column: 2/4;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        align-items: flex-start;
     }
     
     .profil-objectifs {
@@ -246,7 +160,6 @@ body>main {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 50px;
     }
     
     .profil-tags>ul>li {
@@ -282,7 +195,8 @@ body>main {
 }
 
 #line{
-    border: 1px var(--line-color) solid;
+    border: 1px var(--primary-color) solid;
+    opacity: 50%;
     width: 80px;
     rotate: 90deg;
 }
@@ -294,7 +208,7 @@ body>main {
 }
 
 #caroussel-title>div>img{
-    width: auto/;
+    width: auto;
     height: auto;
 }
 

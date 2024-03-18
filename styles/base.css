@@ -40,7 +40,7 @@ h1,h2 {
   font-family: "Cormorant Garamond", serif;
   font-weight: var(--font-normal-serif);
   font-style: normal;
- font-weight: var(--font-normal);
+  font-weight: var(--font-normal);
 }
 
 h1 strong, h2 {
