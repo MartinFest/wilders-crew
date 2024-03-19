@@ -93,21 +93,18 @@
                     </h2>
                     <ul>
                         <li id="github-profil">
-                            <a href="" >
-                                <img id="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                    alt="logo de Github">
+                            <a href="">
+                                <span class="icon-icons-github" aria-label="Github profil"></span>
                             </a>
                         </li>
                         <li id="linkedin-profil">
                             <a href="">
-                                <img id="linkedin-logo" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg"
-                                    alt="logo de Linkedin">
+                                <span class="icon-icons-linkedin" aria-label="linkedin profil"></span>
                             </a>
                         </li>
                         <li id="codepen-profil">
                             <a href="">
-                                <img id="codepen-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png"
-                                    alt="logo de Codepen">
+                                <span class="icon-icons-codepen" aria-label="Codepen profil"></span>
                             </a>
                         </li>
                     </ul>
@@ -148,7 +145,7 @@
 
     <!-- scrollbar -->
 
-    <section class="caroussel">
+    <section class="caroussel-section">
         <section id="caroussel-title">
             <div id="avatar-name">
                 <img src="/Assets/vector.svg" alt="Egyptian avatar">
@@ -159,40 +156,81 @@
             <div id="line">
             </div>
         </section>
-        <ul class="other-profiles">
-            <li>
-                <a href="" id="person-a" alt="Personne A">
-                    <img src="https://cdn.pixabay.com/photo/2023/06/16/15/10/man-ai-8068201_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-b" alt="Personne B">
-                    <img src="https://cdn.pixabay.com/photo/2024/02/17/17/11/ai-generated-8579830_960_720.png" alt="Personne">
-                </a>
-                <a href="" id="person-c" alt="Personne C">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-d" alt="Personne D">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-e" alt="Personne E">
-                    <img src="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-f" alt="Personne F">
-                    <img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-g" alt="Personne G">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-h" alt="Personne H">
-                    <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-i" alt="Personne I">
-                    <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-j" alt="Personne J">
-                    <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg" alt="Personne">
-                </a>
-            </li>
-        </ul>
+        <div id="carousel-container">
+            <ul class="other-profiles">
+                <li>
+                    <a href="" id="person-a" alt="Personne A" class="animate">
+                        <img src="https://cdn.pixabay.com/photo/2023/06/16/15/10/man-ai-8068201_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-b" alt="Personne B" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2024/02/17/17/11/ai-generated-8579830_960_720.png"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-c" alt="Personne C" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg" alt="Personne">
+                    </a>
+                    <a href="" id="person-d" alt="Personne D" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Personne">
+                    </a>
+                    <a href="" id="person-e" alt="Personne E" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-f" alt="Personne F" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-g" alt="Personne G" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg" alt="Personne">
+                    </a>
+                    <a href="" id="person-h" alt="Personne H" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-i" alt="Personne I" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                    <a href="" id="person-j" alt="Personne J" class="slide animate">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </li>
+            </ul>
+            <div id="controls">
+                <span class="icon-icons-chevron" id="prev" aria-label="Bouton précédent"></span>
+                <span class="icon-icons-chevron" id="next" aria-label="Bouton suivant"></span>
+            </div>
+        </div>
     </section>
 
 </body>

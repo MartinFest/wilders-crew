@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-    margin: 0rem 0rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 /* --------------------- */
@@ -25,14 +25,14 @@ body>main {
     display : grid;
     grid-template-columns : repeat(3, 1fr);
     grid-template-rows : repeat(6, 16.5%);
-    height : 350px;
+    height : 318px;
     }
 
     #profil-picture {
         grid-column : 1/2;
         grid-row : 1/7;
-        width: 350px;
-        height: 350px;
+        width: 318px;
+        height: 318px;
         border-radius: 50%;
         background-image: url("/Assets/julien\ photo.jpg");
         background-size: 350px;
@@ -69,7 +69,6 @@ body>main {
     #profil-description {
         grid-column : 2/4;
         grid-row : 4/7;
-        align-self: center;
     }
 
     /* -end---Picture - Name - Citation - Description----- */
@@ -104,7 +103,7 @@ body>main {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 2rem;
+        padding: 1rem 0rem 0rem 0rem;
     }
 
     .buttons {
@@ -117,6 +116,7 @@ body>main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     
     .social-networks>ul {
@@ -132,8 +132,9 @@ body>main {
     }
     
     
-    .social-networks>ul>li>a>img {
-        width : 50px;
+    .social-networks>ul>li>a>span {
+        font-size : 50px;
+        color: black;
     }
 
     /* ----Objectif - Tag ---- */
@@ -143,6 +144,8 @@ body>main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 30px;
+        padding: 0rem 0rem 2.5rem 0rem;
     }
     
     .profil-objectifs {
@@ -160,13 +163,14 @@ body>main {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        gap: 10px;
     }
     
     .profil-tags>ul>li {
         list-style-type: none;
         padding: 10px 20px;
         border-radius: 12px;
-        border: 1px var(--heavy-color) solid;
+        border: 1px black solid;
         text-transform: uppercase;
         word-wrap: break-word;
         font-weight: 600;
@@ -178,10 +182,10 @@ body>main {
     
 /* Caroussel */
 
-.caroussel {
+.caroussel-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: auto;
+    grid-template-columns: repeat(5, 20%);
 }
 
 #caroussel-title {
@@ -201,10 +205,9 @@ body>main {
     rotate: 90deg;
 }
 
-.caroussel>section>h2{
-    font-size: var(--link-size);
-    font-weight: 500;
-    word-wrap: normal;
+.caroussel-section>section>h2{
+    font-size: 25px;
+    padding: 1.5rem 0rem 0rem 0rem;
 }
 
 #caroussel-title>div>img{
@@ -212,7 +215,9 @@ body>main {
     height: auto;
 }
 
-.other-profiles{
+    /* partie défilante */
+
+* .other-profiles{
     grid-column: 2/5;
     margin: 0;
     display: flex;
@@ -232,5 +237,62 @@ body>main {
     gap: 50px;
     object-fit: cover;
     border-radius: 50%;
+} 
+
+#carousel-container {
+    grid-column: 2/6;
+    width: auto;
+    height: auto;
+    position: relative;
+    /* margin: 50px auto 0; */
+}
+
+#carousel {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.animate {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: -webkit-transorm;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+/* .slide {
+    list-style: none;
+    position: relative;
+    float: left;
+    transform: translateX(-500px);
+} */
+
+#controls {
+    position: absolute;
+    font-size: 50px;
+    top: calc(50% - 25px);
+    margin: 0 -60px;
+}
+
+#controls span {
+	width: 50px;
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+#prev {
+    transform: rotate(90deg);
+    float: left;
+}
+
+#next {
+    transform: rotate(-90deg);
+    float: right;
 }
 
