@@ -281,10 +281,6 @@ header {
         height: 90px;
     }
 
-    #section_contact .col>* {
-        /* gap:1rem; */
-    }
-
     #section_contact>.container {
         min-height: 60vh;
         overflow: hidden;
