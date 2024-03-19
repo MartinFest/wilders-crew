@@ -1,3 +1,21 @@
+header,
+#section_intro h1,
+#section_intro .encart-txt {
+    opacity: 0;
+}
+
+header {
+    animation: apparition 1s ease-in 0.5s 1 both;
+}
+
+#section_intro h1 {
+    animation: apparition 1s ease-in 1s 1 both;
+}
+
+#section_intro .encart-txt {
+    animation: apparition 1s ease-in 1.5s 1 both;
+}
+
 .encart .filter-skills {
     display: flex;
     height: 46.375rem;
@@ -13,7 +31,7 @@
 
 /*------SECTIONS-------*/
 .btn-next-section {
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,12 +39,29 @@
     animation: bounce 1s infinite alternate;
 }
 
-@keyframes bounce{
+
+/*-----------------------------*/
+/*--------ANIMATION-----------*/
+/*---------------------------*/
+@keyframes bounce {
     from {
-        transform: translateY(-10px);   
+        transform: translateY(-10px);
     }
+
     to {
         transform: translateY(10px);
+    }
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -54,6 +89,7 @@
 #section_intro>* {
     color: var(--white);
 }
+
 #section_intro .title-icon span[class^="icon-"] {
     color: var(--primary-color);
 }
@@ -80,10 +116,12 @@
     /* object-fit: contain; */
     border-radius: var(--radius-huge);
 }
-.listing-profile .profile img{
+
+.listing-profile .profile img {
     position: relative;
     object-fit: cover;
 }
+
 .profile-name {
     position: absolute;
     right: 0;
@@ -94,10 +132,11 @@
     transition: all 0.3s ease-out;
     text-align: center;
 }
+
 .listing-profile .profile:before {
     position: absolute;
     z-index: 10;
-    content:'';
+    content: '';
     opacity: 0;
     right: 0;
     top: 0;
@@ -106,14 +145,16 @@
     transition: all 0.3s ease-out;
     background-color: var(--primary-color);
 }
+
 .listing-profile .profile:hover:before {
     opacity: 0.8;
 }
+
 .profile:hover .profile-name {
     position: absolute;
-    z-index:20;
+    z-index: 20;
     opacity: 1;
-    color:var(--white);
+    color: var(--white);
 }
 
 
@@ -123,7 +164,7 @@
 }
 
 #section_contact .container {
-    position:relative;
+    position: relative;
     background: url(../images/photo-equipe.webp) no-repeat;
     background-size: cover;
     color: var(--white);
@@ -131,10 +172,11 @@
     border-radius: var(--radius-super-big);
     overflow: hidden;
 }
+
 #section_contact .container:before {
     position: absolute;
     z-index: 10;
-    content:'';
+    content: '';
     opacity: 0.85;
     width: 100%;
     height: 100%;
@@ -143,6 +185,7 @@
     display: block;
     background-color: var(--primary-color-dark);
 }
+
 #section_contact .container h2,
 #section_contact .container h2 span,
 #section_contact .container p {
@@ -166,6 +209,7 @@
     .container {
         width: 100%;
     }
+
     .listing-profile .profile,
     .listing-profile .profile img,
     .profile:before {
@@ -175,39 +219,46 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .home>section,
-     .overflow-hidden-lg,
+    .overflow-hidden-lg,
     #section_contact .container {
         display: flex;
         margin: auto;
         align-items: center;
         flex-direction: column;
     }
-    .home>section{
+
+    .home>section {
         height: 94vh;
         width: 97%;
         margin-top: 3vh;
         /* padding: 2rem; */
     }
+
     .btn-next-section {
         position: absolute;
         z-index: 100;
         bottom: -20px;
     }
+
     #section_profile .overflow-hidden-lg,
-    #section_contact .container{
-        justify-content:center;
-        
+    #section_contact .container {
+        justify-content: center;
+
     }
-    .overflow-hidden-lg{
+
+    .overflow-hidden-lg {
         position: relative;
-        overflow:hidden;
+        overflow: hidden;
         width: 100%;
         height: 100%;
     }
-    #section_profile .overflow-hidden-lg{
+
+    #section_profile .overflow-hidden-lg {
         padding: 2rem;
     }
+
     #section_profile .overflow-hidden-lg::before {
         position: absolute;
         right: -130px;
@@ -222,22 +273,26 @@
         color: #a9a9a9;
         font-size: 60rem;
     }
+
     .listing-profile .profile,
     .listing-profile .profile img,
     .profile:before {
         width: 90px;
         height: 90px;
     }
-    #section_contact  .col >* {
+
+    #section_contact .col>* {
         /* gap:1rem; */
     }
-    #section_contact > .container {
-        min-height:60vh;
+
+    #section_contact>.container {
+        min-height: 60vh;
         overflow: hidden;
     }
-    #section_contact > .container > .row {
-        position:relative;
-        z-index:20;
+
+    #section_contact>.container>.row {
+        position: relative;
+        z-index: 20;
     }
 
 }
@@ -245,18 +300,20 @@
 @media screen and (min-width: 1024px) {}
 
 @media screen and (min-width: 1600px) {
-    .home>section{
+    .home>section {
         height: 90vh;
         width: 90%;
         margin-top: 5vh;
         padding: 2rem;
     }
+
     .listing-profile .profile,
     .listing-profile .profile img,
     .profile:before {
         width: 120px;
         height: 120px;
     }
+
     .btn-next-section {
         font-size: 1.4rem;
     }
