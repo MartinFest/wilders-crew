@@ -145,7 +145,7 @@ body>main {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding: 0rem 0rem 2.5rem 0rem;
+        padding: 0rem 0rem 1.5rem 0rem;
     }
     
     .profil-objectifs {
@@ -185,7 +185,6 @@ body>main {
 .caroussel-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: repeat(5, 20%);
 }
 
 #caroussel-title {
@@ -217,82 +216,45 @@ body>main {
 
     /* partie défilante */
 
-* .other-profiles{
-    grid-column: 2/5;
+.vjslider {
+    grid-column: 2/6;
+}
+
+.vjslider>div:first-child {
+    overflow: hidden;
+    max-width: auto;
+}
+
+.vjslider__slide{
+    width:100%;
+    float: left;
+    /* transform: translateX(-00px) */
+}
+
+.vjslider__slider--animate{
+    /* transition:transform .5s; */
+}
+
+.owl-carousel{
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.other-profiles>li{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+.carousel-nav {
+    position: absolute;
+    justify-content: center;
 }
 
-.other-profiles>li>a>img {
+.item>a>img {
     width : 100px;
     height: 100px;
-    gap: 50px;
     object-fit: cover;
     border-radius: 50%;
 } 
 
-#carousel-container {
-    grid-column: 2/6;
-    width: auto;
-    height: auto;
-    position: relative;
-    /* margin: 50px auto 0; */
-}
 
-#carousel {
-    position: relative;
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-}
 
-.animate {
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -o-transition-duration: .5s;
-    transition-duration: .5s;
-    -webkit-transition-property: -webkit-transorm;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-}
-
-/* .slide {
-    list-style: none;
-    position: relative;
-    float: left;
-    transform: translateX(-500px);
-} */
-
-#controls {
-    position: absolute;
-    font-size: 50px;
-    top: calc(50% - 25px);
-    margin: 0 -60px;
-}
-
-#controls span {
-	width: 50px;
-	cursor: pointer;
-	opacity: 0.4;
-}
-
-#prev {
-    transform: rotate(90deg);
-    float: left;
-}
-
-#next {
-    transform: rotate(-90deg);
-    float: right;
-}
 
