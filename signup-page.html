@@ -48,6 +48,7 @@
                 <input type="text" placeholder="Prénom*" id="firstName">
                 <input type="email" placeholder="Email*" id="email" required>
                 <input type="date" id="birthdate">
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
@@ -57,6 +58,7 @@
                 <input type="url" placeholder="Linkedin*" id="linkedin">
                 <input type="url" placeholder="X*" id="x">
                 <input type="url" placeholder="Site web*" id="website">
+                <button type="submit">Sauvegarder</button>
             </form>
             </section>
         </div>
@@ -66,26 +68,31 @@
             <form>
                 <textarea placeholder="Quelques mots sur ton parcours*" id="messagePerso" rows="10"
                     cols="33"></textarea>
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
         <div class="ambition-bloc">
-            <textarea id="messagePro" placeholder="Tes objectifs professionnels*" rows="10" cols="33"></textarea>
+            <form>
+                <textarea id="messagePro" placeholder="Tes objectifs professionnels*" rows="10" cols="33"></textarea>
+                <button type="submit">Sauvegarder</button>
+            </form>
         </div>
 
         <div class="hobbies-bloc">
-            <h2>Hobbies</h2>
+            <h2 id="hobbies-title">Hobbies</h2>
             <form>
                 <input type="text" placeholder="Hobby*" id="hobbie1">
                 <input type="text" placeholder="Hobby*" id="hobbie2">
                 <input type="text" placeholder="Hobby*" id="hobbie3">
                 <input type="text" placeholder="Hobby*" id="hobbie4">
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
         <div class="compétences-bloc">
-            <h2>Compétences</h2>
             <form id="skills">
+                <h2>Compétences</h2>
                 <label for="level">HTML5 </label><input type="range" id="level" name="level" min="0" max="10">
                 <label for="level">CSS3 </label><input type="range" id="level" name="level" min="0" max="10">
                 <label for="level">JavaScript </label><input type="range" id="level" name="level" min="0" max="10">
@@ -94,6 +101,7 @@
                 <label for="level">Node.js </label><input type="range" id="level" name="level" min="0" max="10">
             </form>
         </div>
+
 
     </main>
 

@@ -5,7 +5,6 @@ main {
     grid-template-rows: 1fr 1fr ;
     gap: 50px;
     padding: 3rem;
-    background-color: #D9D9D9;
 }
 
 .wilder-photo {
@@ -20,6 +19,8 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    align-items: center;
 }
 
 .network-bloc {
@@ -27,6 +28,8 @@ main {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -35,6 +38,8 @@ main {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    align-items: center;
 }
 
 .ambition-bloc {
@@ -42,6 +47,8 @@ main {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    align-items: center;
 }
 
 .hobbies-bloc {
@@ -60,11 +67,11 @@ main {
 
 
 #profil-picture {
-        width: 300px;
-        height: 300px; 
+        width: 260px;
+        height: 260px; 
         border-radius: 50%;
         background-image: url(https://cdn.pixabay.com/photo/2024/02/21/22/16/ai-generated-8588724_960_720.png);
-        background-size: 318px;
+        background-size: 260px;
 }
 
 #level {
@@ -78,6 +85,7 @@ main {
     flex-direction: column;
     gap: 1em;
 }
+
  .network-bloc > form {
     display: flex;
     flex-direction: column;
@@ -105,4 +113,43 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
+
  }
+
+ #hobbies-title {
+     margin-bottom: 20px;
+ }
+
+ button {
+    background-color: black; /* couleur de fond */
+    color: white; /* couleur du texte */
+    padding: 10px 20px; /* espacement intérieur */
+    border: none; /* supprimer la bordure */
+    border-radius: 5px; /* bordure arrondie */
+    cursor: pointer; /* curseur au survol */
+}
+
+.compétences-bloc > form {
+    margin-top: -20px;
+}
+
+form > input {
+    border: none; /* supprimer la bordure */
+    border-radius: 5px; /* bordure arrondie */
+}
+
+form > textarea {
+    border: none; /* supprimer la bordure */
+    border-radius: 5px; /* bordure arrondie */
+}
+
+  input[type="range"] {
+        width: 70%;
+  }
+
+@media screen and (max-width: 600px) {
+    main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+}
