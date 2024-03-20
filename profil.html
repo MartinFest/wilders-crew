@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link href="./node_modules/vjslider/dist/vjslider.css" rel="stylesheet">
     <title>Profil - Julien Deniaud | Wilder Book</title>
 </head>
 
 <body>
+
     <header class="container">
         <nav class="navbar">
             <a href="home.html" class="logo">
@@ -41,7 +43,7 @@
         <!-- Identification section -->
 
         <section class="profil-informations">
-            <span id="profil-picture" alt="Profil picture">
+            <span id="profil-picture" aria-label="Profil picture">
             </span>
             <section id="profil-name">
                 <div>
@@ -49,11 +51,11 @@
                         <img src="/Assets/vector.svg" alt="Egyptian avatar">
                     </span>
                     <h1>
-                        Julien Deniaud
+                        <strong>Julien Deniaud</strong>
                     </h1>
                 </div>
                 <p>
-                    "Code caféine, bugs éliminés !"
+                    <strong>"Code caféine, bugs éliminés !"</strong>
                 </p>
             </section>
             <section id="profil-description">
@@ -80,10 +82,10 @@
         <section class="final-bloc-profil">
             <section class="buttons-reseaux-blocs">
                 <section class="buttons">
-                    <a id="contact- button" href="" class="btn btn-default" alt="Vers la messagerie">
+                    <a href="" class="btn btn-default" title="Accéder à la messagerie">
                         Contact
                     </a>
-                    <a id="cv- button" href="" class="btn btn-secondary" alt="Afficher le CV">
+                    <a href="" class="btn btn-secondary" title="Afficher le CV">
                         CV
                     </a>
                 </section>
@@ -93,21 +95,18 @@
                     </h2>
                     <ul>
                         <li id="github-profil">
-                            <a href="" >
-                                <img id="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                    alt="logo de Github">
+                            <a href="" title="Accéder au profil Github">
+                                <span class="icon-icons-github" aria-label="Github profil"></span>
                             </a>
                         </li>
                         <li id="linkedin-profil">
-                            <a href="">
-                                <img id="linkedin-logo" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg"
-                                    alt="logo de Linkedin">
+                            <a href="" title="Accéder au profil Linkedin">
+                                <span class="icon-icons-linkedin" aria-label="linkedin profil"></span>
                             </a>
                         </li>
                         <li id="codepen-profil">
-                            <a href="">
-                                <img id="codepen-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png"
-                                    alt="logo de Codepen">
+                            <a href="" title="Accéder au profil Codepen">
+                                <span class="icon-icons-codepen" aria-label="Codepen profil"></span>
                             </a>
                         </li>
                     </ul>
@@ -138,7 +137,7 @@
                     <ul>
                         <li>Fromage</li>
                         <li>Moto</li>
-                        <li>Chats <3</li>
+                        <li>Chats</li>
                         <li>Jeux vidéo</li>
                     </ul>
                 </section>
@@ -146,9 +145,9 @@
         </section>
     </main>
 
-    <!-- scrollbar -->
+    <!--scrollbar -->
 
-    <section class="caroussel">
+    <section class="caroussel-section">
         <section id="caroussel-title">
             <div id="avatar-name">
                 <img src="/Assets/vector.svg" alt="Egyptian avatar">
@@ -159,42 +158,129 @@
             <div id="line">
             </div>
         </section>
-        <ul class="other-profiles">
-            <li>
-                <a href="" id="person-a" alt="Personne A">
-                    <img src="https://cdn.pixabay.com/photo/2023/06/16/15/10/man-ai-8068201_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-b" alt="Personne B">
-                    <img src="https://cdn.pixabay.com/photo/2024/02/17/17/11/ai-generated-8579830_960_720.png" alt="Personne">
-                </a>
-                <a href="" id="person-c" alt="Personne C">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-d" alt="Personne D">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-e" alt="Personne E">
-                    <img src="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-f" alt="Personne F">
-                    <img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-g" alt="Personne G">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-h" alt="Personne H">
-                    <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_1280.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-i" alt="Personne I">
-                    <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg" alt="Personne">
-                </a>
-                <a href="" id="person-j" alt="Personne J">
-                    <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg" alt="Personne">
-                </a>
-            </li>
-        </ul>
-    </section>
 
+        <!-- ----CAROUSEL----- -->
+
+        <div class="vjslider" id="listing-profile">
+            <div class="vjslider__slider owl-carousel">
+
+                <!-- Partie créer par common.js -->
+
+                <!-- <div class="vjslider__slide item">
+                    <a href="" id="person-a" title="Personne A">
+                        <img src="https://cdn.pixabay.com/photo/2023/06/16/15/10/man-ai-8068201_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item">
+                    <a href="" id="person-b" title="Personne B">
+                        <img src="https://cdn.pixabay.com/photo/2024/02/17/17/11/ai-generated-8579830_960_720.png"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="1">
+                    <a href="" id="person-c" title="Personne C">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg" alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="2">
+                    <a href="" id="person-d" title="Personne D">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="3">
+                    <a href="" id="person-e" title="Personne E">
+                        <img src="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="4">
+                    <a href="" id="person-f" title="Personne F">
+                        <img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="5">
+                    <a href="" id="person-g" title="Personne G">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg" alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="6">
+                    <a href="" id="person-h" title="Personne H">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="7">
+                    <a href="" id="person-i" title="Personne I">
+                        <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="8">
+                    <a href="" id="person-j" title="Personne J">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="9">
+                    <a href="" id="person-k" title="Personne K">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="10">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="11">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="12">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="13">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="14">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div>
+                <div class="vjslider__slide item" data-id="15">
+                    <a href="" id="person-l" title="Personne L">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
+                            alt="Personne">
+                    </a>
+                </div> -->
+
+            </div>
+            <nav class="carousel-nav">
+                <button data-prev>Prev</button>
+                <button data-next>Next</button>
+                <button data-start-loop>Start loop</button>
+                <button data-stop-loop>Stop loop</button>
+            </nav>
+        </div>
+    </section>
+    <script src="./node_modules/vjslider/dist/vjslider.js"></script>
+    <script>const sliderOptions = {
+            numberOfVisibleSlides: 10
+        };
+    </script>
+    <script src="./node_modules/vjslider/demo/nav.js"></script>
 </body>
 
 </html>

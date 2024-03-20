@@ -1,74 +1,18 @@
-/* ----Variables---- */
-
-:root {
-
-    /* ----colors---- */
-    /* --name-color : #2E241B;
-    --background-color: #D9D9D9;
-    --light-color: #FFFFFF;
-    --heavy-color : #000000;
-    --citation-color : #906044;
-    --line-color : #A9A9A9;
-
-    /* ----fonts---- */
-    /* --title-font : "Playfair Display", serif; 
-    --text-font : "Lato", sans-serif;
-    --name-size : 70px;
-    --title-size : 40px;
-    --citation-size : 20px;
-    --text-size : 18px;
-    --link-size : 21px; */
-}
-
-/* ----Global---- */
-
-* {
-    box-sizing : border-box;
-}
-
-/* ----header---- */
-
-
-
-/* ----global text---- */
-
-/* h1, h2 {
-    font-family : var(--title-font);
-    font-weight: 400;
-    word-wrap: break-word;
-    margin: 0; 
-} */
-
-/* h1{
-    font-size : var(--name-size);
-    color: var(--name-color);
-} */
-
-/* h2 {
-    text-transform: uppercase;
-}
-
-p, li {
-    font-size : var(--text-size);
-    font-family : var(--text-font);
-}
-
-a {
-    font-size : var(--link-size);
-    font-family: var(--text-font);
-} */
-
-/* ----Body---- */
-
-/* body {
-    margin : 0;
-    background-color: var(--background-color);
-} */
-
 /* -start---Main---- */
 
+/* A supprimer plus tard */
+
+h1 {
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+h2 {
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+/* --------------------- */
 body>main {
-    padding : 1rem 2rem;
+    padding : 1.5rem 2rem 0rem 2rem;
     display : grid;
     grid-template-columns: repeat(4, 25%);
 }
@@ -81,19 +25,19 @@ body>main {
     display : grid;
     grid-template-columns : repeat(3, 1fr);
     grid-template-rows : repeat(6, 16.5%);
-    height : 350px;
+    height : 318px;
     }
 
     #profil-picture {
         grid-column : 1/2;
         grid-row : 1/7;
-        width: 350px;
-        height: 350px;
+        width: 318px;
+        height: 318px;
         border-radius: 50%;
         background-image: url("/Assets/julien\ photo.jpg");
         background-size: 350px;
         justify-self: center;
-        align-self: flex-end;
+        /* align-self: flex-end; */
     }
 
     #profil-name {
@@ -119,22 +63,12 @@ body>main {
 
     #profil-name>p {
         margin: 0 100px;
-        color : var(--citation-color);
+        color : var(--primary-color);   
     }
 
     #profil-description {
         grid-column : 2/4;
         grid-row : 4/7;
-        align-self: center;
-    }
-
-    #profil-description>h2 {
-        font-size: var(--title-size);
-        margin: 0;
-    }
-
-    #profil-description>p {
-        font-size : var(--text-size);
     }
 
     /* -end---Picture - Name - Citation - Description----- */
@@ -169,47 +103,27 @@ body>main {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 2rem;
+        padding: 1rem 0rem 0rem 0rem;
     }
 
     .buttons {
         display: flex;
         justify-content: center;
         gap: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        word-wrap: break-word;
-    }
-
-    #contact-button {
-        color: var(--name-color);
-        padding: 10px 30px;
-        background-color: var(--light-color);
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        text-decoration: none;
-    }
-
-    #cv-button {
-        color: var(--light-color);
-        padding: 10px 30px;
-        background-color: var(--citation-color);
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        text-decoration: none;
     }
     
     .social-networks {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
     
     .social-networks>ul {
         display: flex;
         flex-direction: row-reverse;
         padding: 0;
+        margin: 0;
         gap: 20px;
     }
     
@@ -218,8 +132,9 @@ body>main {
     }
     
     
-    .social-networks>ul>li>a>img {
-        width : 50px;
+    .social-networks>ul>li>a>span {
+        font-size : 50px;
+        color: black;
     }
 
     /* ----Objectif - Tag ---- */
@@ -228,7 +143,9 @@ body>main {
         grid-column: 2/4;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0rem 0rem 1.5rem 0rem;
     }
     
     .profil-objectifs {
@@ -246,14 +163,14 @@ body>main {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 50px;
+        gap: 10px;
     }
     
     .profil-tags>ul>li {
         list-style-type: none;
         padding: 10px 20px;
         border-radius: 12px;
-        border: 1px var(--heavy-color) solid;
+        border: 1px black solid;
         text-transform: uppercase;
         word-wrap: break-word;
         font-weight: 600;
@@ -265,10 +182,9 @@ body>main {
     
 /* Caroussel */
 
-.caroussel {
+.caroussel-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: auto;
 }
 
 #caroussel-title {
@@ -282,41 +198,63 @@ body>main {
 }
 
 #line{
-    border: 1px var(--line-color) solid;
+    border: 1px var(--primary-color) solid;
+    opacity: 50%;
     width: 80px;
     rotate: 90deg;
 }
 
-.caroussel>section>h2{
-    font-size: var(--link-size);
-    font-weight: 500;
-    word-wrap: normal;
+.caroussel-section>section>h2{
+    font-size: 25px;
+    padding: 1.5rem 0rem 0rem 0rem;
 }
 
 #caroussel-title>div>img{
-    width: auto/;
+    width: auto;
     height: auto;
 }
 
-.other-profiles{
-    grid-column: 2/5;
+    /* partie défilante */
+
+.vjslider {
+    grid-column: 2/6;
+}
+
+.vjslider>div:first-child {
+    overflow: hidden;
+    max-width: auto;
+}
+
+.vjslider__slide{
+    width:100%;
+    float: left;
+    /* transform: translateX(-00px) */
+}
+
+.vjslider__slider--animate{
+    /* transition:transform .5s; */
+}
+
+.owl-carousel{
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.other-profiles>li{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+.carousel-nav {
+    position: absolute;
+    justify-content: center;
 }
 
-.other-profiles>li>a>img {
+.item>a>img {
     width : 100px;
     height: 100px;
-    gap: 50px;
     object-fit: cover;
     border-radius: 50%;
-}
+} 
+
+
+
 
