@@ -1,3 +1,24 @@
+// Fonction pour inclure un fichier
+function includeHTML(url, containerId) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            let container = document.getElementById(containerId);
+            if (container) {
+                container.innerHTML = data;
+                container.appendChild(htmlElement);
+            } else {
+                console.error("Container avec id '" + containerId + "' non trouvé.");
+            }
+        })
+        .catch(error => console.error("Une erreur s'est produite lors du chargement du fichier HTML", error));
+}
+// Inclure le fichier HTML avec le conteneur personnalisé
+includeHTML("../includes/navbar.html", "header");
+includeHTML("../includes/footer.html", "footer");
+
+
+// pour Afficher les profils utilisateurs
 document.addEventListener("DOMContentLoaded", function () {
     fetch('./scripts/wilders-profil.json') // Récupère le fichier JSON
         .then(response => response.json()) // Convertit la réponse en objet JSON
@@ -36,10 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 if (listingProfile.classList.contains("vjslider__slider")) {
-                    returnProfile("div")
+                    returnProfile("div");
+                    //puis on ajoute le script carousel aprés l'exécution de ce script
+                    const scriptCarousel = document.createElement(script);
+                    scriptCarousel.src = "./node_modules/vjslider/dist/vjslider.js";
+                    document.body.appendChild(scriptCarousel);
                 } else {
                     returnProfile("li");
                 }
+
 
             });
         })

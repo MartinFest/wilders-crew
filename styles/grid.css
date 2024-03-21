@@ -1,8 +1,6 @@
 /*---------------------------------------*/
 /*----------------GRID------------------*/
 /*-------------------------------------*/
-
-
 .container,
 .container-fluid,
 .container-xxl,
@@ -108,6 +106,106 @@
     align-items: stretch !important;
 }
 
+/*---------------------------------------*/
+/*----------------UTILITIES------------------*/
+/*-------------------------------------*/
+.d-none {
+    display: none !important;
+  }
+  .my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .my-1 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  
+  .mt-0 {
+    margin-top: 0 !important;
+  }
+  
+  .mt-1 {
+    margin-top: 0.25rem !important;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem !important;
+  }
+  
+  .mt-3 {
+    margin-top: 1rem !important;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem !important;
+  }
+  
+
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+  
+  .mb-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mb-auto {
+    margin-bottom: auto !important;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+/*---------------------------------------*/
+/*----------------RESPONSIVE------------------*/
+/*-------------------------------------*/
 @media (min-width: 576px) {
 
     .container-sm,
