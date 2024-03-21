@@ -1,0 +1,39 @@
+.encart {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    height: 50vh;
+}
+
+.chat1, .chat2, .chat3, #message-chat {
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.column {
+    margin-top: 3rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-shrink: 0;
+}
+
+#message-chat {
+    border: none;
+}
+
+.chat1 img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+
+}
+
+.chat1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
