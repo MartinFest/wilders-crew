@@ -106,7 +106,7 @@ header {
     background:
 } */
 
-/*--------listing-profile----*/
+/* --------listing-profile----
 #listing-profile {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +119,7 @@ header {
     position: relative;
     display: flex;
     overflow: hidden;
-    /* object-fit: contain; */
+    object-fit: contain;
     border-radius: var(--radius-huge);
 }
 
@@ -162,7 +162,7 @@ header {
     z-index: 20;
     opacity: 1;
     color: var(--white);
-}
+} */
 
 
 /*section_contact*/
