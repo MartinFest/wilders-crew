@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Création espace recruteur</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link href="./styles/connexion.css" rel="stylesheet">
-
 </head>
 
 <body class="not-home">
@@ -36,43 +35,40 @@
                 Connexion</a>
         </nav>
     </header>
-    <main class="container">
-        <div class="container-login">
-            <h2>Connexion</h2>
 
-            <form>
-                <input type="text" id="utilisateur" name="utilisateur" placeholder="Utilisateur">
-                <br>
-                <br>
-                <input type="password" id="motdepasse" name="motdepasse" placeholder="Mot de passe">
-                <br>
-                <br>
-                <input type="checkbox" id="rememberme" name="rememberme" value="1">
-                <label for="rememberme">Se souvenir de moi</label>
-                <br>
-                <br>
-                <div>
-                    <a class="button black" href="#">Connecter</a>
-                </div>
-                <br>
-                <!-- Faire a href="mot de passe oublié"-->
-                <p>Mot de passe oublié ?</p>
-                <br>
-            </form>
-        </div>
-
-        <div class="container-creation-de-compte">
-            <h2>Création de compte</h2>
-            <br>
-            <div id="gap">
-                <a class="button black" href="signup-page.html">Wilder</a>
-                <a class="button black" href="login.html">Recruteur</a>
-            </div>
-
-        </div>
+    <body>
+        <main>
+            <div class="container">
+                <h1>Créer mon espace recruteur</h1>
 
 
-    </main>
-</body>
+                <form action="">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" name="pseudo">
+                    <br>
+                    <br>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <br>
+                    <br>
+                    <label for="mot de passe">Mot de passe</label>
+                    <input type="text" id="mot de passe" name="mot de passe">
+                    <br>
+                    <br>
+                    <label for="confirmer mot de passe">Confirmation du mot de passe</label>
+                    <input type="text" id="confirmer le mot de passe" name="confirmer le mote de passe">
+                    <br>
+                    <br>
+                    <label for="nom de la société">Nom de la société</label>
+                    <input type="text" id="nom de la société" name="nom de la société">
+                    <br>
+                    <br>
+                    <div>
+                        <a class="button black" href="#">Créer mon compte</a>
+                    </div>
+
+                </form>
+        </main>
+    </body>
 
 </html>
