@@ -5,15 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/icomoon/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="styles/signup-page.css">
+
 </head>
 
-<body>
-    <header>
-        <nav>
+<body class="not-home">
+    <header class="container">
+        <nav class="navbar">
+            <a href="home.html" class="logo">
+                <span class="icon-icons-bird"></span>
+                <span class="logo-nom-container"><span class="logo-nom">Wilders Crew</span>
+                    <small class="signature-logo">Les super wilders</small></span>
+            </a>
+            <ul class="navbar-nav list-unstyled">
+                <li><a href="interne.html" class="taf">Accueil</a></li>
+                <li><a href="#">Notre promo</a></li>
+                <li><a href="#">Messagerie</a></li>
+            </ul>
+            <a href="#" class="btn-login"><span class="icon-icons-egypt-pharaon-profil"></span>
+                Connexion</a>
         </nav>
     </header>
-
     <main>
 
         <div class="wilder-photo">
@@ -22,33 +44,21 @@
 
         <div class="info-bloc">
             <form>
-                <label for="name">Nom </label>
-                <input type="text" id="name">
-                <br>
-                <label for="firstName">Prénom </label>
-                <input type="text" id="firstName">
-                <br>
-                <label for="email">Email </label>
-                <input type="email" id="email" required>
-                <br>
-                <label for="birthdate">Date de naissance </label>
+                <input type="text" id="name" placeholder="Nom*">
+                <input type="text" placeholder="Prénom*" id="firstName">
+                <input type="email" placeholder="Email*" id="email" required>
                 <input type="date" id="birthdate">
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
         <div class="network-bloc">
             <form>
-                <label for="github">Github </label>
-                <input type="url" id="github">
-                <br>
-                <label for="linkedin">Linkedin </label>
-                <input type="url" id="linkedin">
-                <br>
-                <label for="twitter">Twitter </label>
-                <input type="url" id="x">
-                <br>
-                <label for="website">Site web </label>
-                <input type="url" id="website">
+                <input type="url" placeholder="Github*" id="github">
+                <input type="url" placeholder="Linkedin*" id="linkedin">
+                <input type="url" placeholder="X*" id="x">
+                <input type="url" placeholder="Site web*" id="website">
+                <button type="submit">Sauvegarder</button>
             </form>
             </section>
         </div>
@@ -56,23 +66,33 @@
 
         <div class="description-bloc">
             <form>
-                <label>Qui suis-je ? <textarea id="messagePerso" rows="10" cols="33"></textarea></label>
+                <textarea placeholder="Quelques mots sur ton parcours*" id="messagePerso" rows="10"
+                    cols="33"></textarea>
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
         <div class="ambition-bloc">
-            <label>Mes objectifs <textarea id="messagePro" rows="10" cols="33"></textarea>
+            <form>
+                <textarea id="messagePro" placeholder="Tes objectifs professionnels*" rows="10" cols="33"></textarea>
+                <button type="submit">Sauvegarder</button>
+            </form>
         </div>
 
         <div class="hobbies-bloc">
-            <h2>Hobbies</h2>
+            <h2 id="hobbies-title">Hobbies</h2>
             <form>
+                <input type="text" placeholder="Hobby*" id="hobbie1">
+                <input type="text" placeholder="Hobby*" id="hobbie2">
+                <input type="text" placeholder="Hobby*" id="hobbie3">
+                <input type="text" placeholder="Hobby*" id="hobbie4">
+                <button type="submit">Sauvegarder</button>
             </form>
         </div>
 
         <div class="compétences-bloc">
-            <h2>Compétences</h2>
             <form id="skills">
+                <h2>Compétences</h2>
                 <label for="level">HTML5 </label><input type="range" id="level" name="level" min="0" max="10">
                 <label for="level">CSS3 </label><input type="range" id="level" name="level" min="0" max="10">
                 <label for="level">JavaScript </label><input type="range" id="level" name="level" min="0" max="10">
@@ -81,6 +101,7 @@
                 <label for="level">Node.js </label><input type="range" id="level" name="level" min="0" max="10">
             </form>
         </div>
+
 
     </main>
 
