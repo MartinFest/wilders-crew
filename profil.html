@@ -38,121 +38,138 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-fluid">
 
         <!-- Identification section -->
 
-        <section class="profil-informations">
-            <span id="profil-picture" aria-label="Profil picture">
-            </span>
-            <section id="profil-name">
-                <div>
-                    <span id="avatar-name">
-                        <img src="/Assets/vector.svg" alt="Egyptian avatar">
-                    </span>
-                    <h1>
-                        <strong>Julien Deniaud</strong>
-                    </h1>
-                </div>
-                <p>
-                    <strong>"Code caféine, bugs éliminés !"</strong>
-                </p>
-            </section>
-            <section id="profil-description">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo officia commodi autem sit. Quia natus
-                    quae quasi quibusdam voluptate voluptas ipsum, numquam fuga, similique velit molestias, explicabo
-                    debitis provident labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo officia
-                    commodi autem sit. Quia natus
-                    quae quasi quibusdam voluptate voluptas ipsum, numquam fuga, similique velit molestias, explicabo
-                    debitis provident labore.
-                </p>
-            </section>
-        </section>
-
-        <!-- Diagram section -->
-
-        <section class="diagram">
-            <span>
-                <img src="/Assets/Graphique.svg" alt="Graphique de connaissances">
-            </span>
-        </section>
-
-        <!-- Contact/Objectifs section -->
-        <section class="final-bloc-profil">
-            <section class="buttons-reseaux-blocs">
-                <section class="buttons">
-                    <a href="" class="btn btn-default" title="Accéder à la messagerie">
-                        Contact
-                    </a>
-                    <a href="" class="btn btn-secondary" title="Afficher le CV">
-                        CV
-                    </a>
+        <div class="row">
+            <div class="col-md-9">
+                <section class="profil-informations row">
+                    <section id="profil-picture" class="col-md-3">
+                        <div class="profile profile-big">
+                            <img src="./images/portraits/julien-photo.jpg" alt="Photo de Julien" />
+                            <!-- <span id="profil-picture" aria-label="Profil picture">
+                        </span> -->
+                        </div>
+                    </section>
+                    <section id="profil-description" class="col-md-9">
+                        <div id="title-name">
+                            <span class="icon-icons-egypt-pharaon-profil" id="avatar-name" aria-label="Avatar egyptien">
+                                <!-- <img src="/Assets/vector.svg" alt="Egyptian avatar"> -->
+                            </span>
+                            <h1>
+                                <strong>Julien Deniaud</strong>
+                            </h1>
+                        </div>
+                        <p id="citation">
+                            <strong>"Code caféine, bugs éliminés !"</strong>
+                        </p>
+                        <p id="description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo officia commodi autem sit.
+                            Quia
+                            natus
+                            quae quasi quibusdam voluptate voluptas ipsum, numquam fuga, similique velit molestias,
+                            explicabo
+                            debitis provident labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            officia
+                            commodi autem sit. Quia natus
+                            quae quasi quibusdam voluptate voluptas ipsum, numquam fuga, similique velit molestias,
+                            explicabo
+                            debitis provident labore.
+                        </p>
+                    </section>
                 </section>
-                <section class="social-networks">
-                    <h2>
-                        Réseaux
-                    </h2>
-                    <ul>
-                        <li id="github-profil">
-                            <a href="" title="Accéder au profil Github">
-                                <span class="icon-icons-github" aria-label="Github profil"></span>
+
+
+                <!-- Contact/Objectifs section -->
+
+
+                <section class="final-bloc-profil row">
+                    <section class="buttons-reseaux-blocs col-md-3">
+                        <section class="buttons">
+                            <a href="" class="btn btn-default" title="Accéder à la messagerie">
+                                Contact
                             </a>
-                        </li>
-                        <li id="linkedin-profil">
-                            <a href="" title="Accéder au profil Linkedin">
-                                <span class="icon-icons-linkedin" aria-label="linkedin profil"></span>
+                            <a href="" class="btn btn-secondary" title="Afficher le CV">
+                                CV
                             </a>
-                        </li>
-                        <li id="codepen-profil">
-                            <a href="" title="Accéder au profil Codepen">
-                                <span class="icon-icons-codepen" aria-label="Codepen profil"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </section>
-            <section class="objectifs-tag-blocs">
-                <section class="profil-objectifs">
-                    <h2>
-                        Objectifs
-                    </h2>
-                    <section id="objectifs-blocs">
-                        <ul id="objectifs-first-bloc">
-                            <li>J'ai un premier objectif cool</li>
-                            <li>J'ai un premier objectif cool</li>
-                            <li>J'ai un premier objectif cool</li>
-                        </ul>
-                        <ul id="objectifs-second-bloc">
-                            <li>Et tous mes autres objectifs sont cool aussi !</li>
-                            <li>Et tous mes autres objectifs sont cool aussi !</li>
-                            <li>Et tous mes autres objectifs sont cool aussi !</li>
+                        </section>
+                        <section class="social-networks">
+                            <h2>
+                                Réseaux
+                            </h2>
+                            <ul>
+                                <li id="github-profil">
+                                    <a href="" title="Accéder au profil Github">
+                                        <span class="icon-icons-github" aria-label="Github profil"></span>
+                                    </a>
+                                </li>
+                                <li id="linkedin-profil">
+                                    <a href="" title="Accéder au profil Linkedin">
+                                        <span class="icon-icons-linkedin" aria-label="linkedin profil"></span>
+                                    </a>
+                                </li>
+                                <li id="codepen-profil">
+                                    <a href="" title="Accéder au profil Codepen">
+                                        <span class="icon-icons-codepen" aria-label="Codepen profil"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <!-- <section class="objectifs-tag-blocs">
+                        <section class="profil-objectifs">
+                            <h2>
+                                Objectifs
+                            </h2>
+                            <section id="objectifs-blocs">
+                                <ul id="objectifs-first-bloc">
+                                    <li>J'ai un premier objectif cool</li>
+                                    <li>J'ai un premier objectif cool</li>
+                                    <li>J'ai un premier objectif cool</li>
+                                </ul>
+                                <ul id="objectifs-second-bloc">
+                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
+                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
+                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
+                                </ul>
+                            </section>
+                    </section> -->
+                    <section class="profil-tags col-md-9">
+                        <h2>
+                            Personnalité et hobbies
+                        </h2>
+                        <ul>
+                            <li>Fromage</li>
+                            <li>Moto</li>
+                            <li>Chats</li>
+                            <li>Jeux vidéo</li>
                         </ul>
                     </section>
                 </section>
-                <section class="profil-tags">
-                    <h2>
-                        Personnalité et hobbies
-                    </h2>
-                    <ul>
-                        <li>Fromage</li>
-                        <li>Moto</li>
-                        <li>Chats</li>
-                        <li>Jeux vidéo</li>
-                    </ul>
                 </section>
+            </div>
+
+            <!-- Diagram section -->
+
+            <section class="col-md-3">
+                <div class="diagram">
+                    <img src="./images/Graphique.png" alt="Graphique de connaissances">
+                </div>
             </section>
-        </section>
+        </div>
     </main>
 
     <!--scrollbar -->
 
-    <section class="caroussel-section">
-        <section id="caroussel-title">
-            <div id="avatar-name">
-                <img src="/Assets/vector.svg" alt="Egyptian avatar">
+    <section class="caroussel-section row">
+        <section id="caroussel-title" class="col-md-2">
+            <div id="avatar-name-2">
+                <span class="icon-icons-egypt-pharaon-profil" id="avatar-name-carousel"
+                    aria-label="Avatar egyptien"></span>
+                <!-- <img src="/Assets/vector.svg" alt="Egyptian avatar"> -->
             </div>
-            <h2>
+            <h2 id="other-wilders">
                 Les autres Wilders
             </h2>
             <div id="line">
@@ -161,121 +178,28 @@
 
         <!-- ----CAROUSEL----- -->
 
-        <div class="vjslider" id="listing-profile">
-            <div class="vjslider__slider owl-carousel">
-
-                <!-- Partie créer par common.js -->
-
-                <!-- <div class="vjslider__slide item">
-                    <a href="" id="person-a" title="Personne A">
-                        <img src="https://cdn.pixabay.com/photo/2023/06/16/15/10/man-ai-8068201_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item">
-                    <a href="" id="person-b" title="Personne B">
-                        <img src="https://cdn.pixabay.com/photo/2024/02/17/17/11/ai-generated-8579830_960_720.png"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="1">
-                    <a href="" id="person-c" title="Personne C">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg" alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="2">
-                    <a href="" id="person-d" title="Personne D">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="3">
-                    <a href="" id="person-e" title="Personne E">
-                        <img src="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="4">
-                    <a href="" id="person-f" title="Personne F">
-                        <img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="5">
-                    <a href="" id="person-g" title="Personne G">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg" alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="6">
-                    <a href="" id="person-h" title="Personne H">
-                        <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="7">
-                    <a href="" id="person-i" title="Personne I">
-                        <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="8">
-                    <a href="" id="person-j" title="Personne J">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="9">
-                    <a href="" id="person-k" title="Personne K">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="10">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="11">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="12">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="13">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="14">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div>
-                <div class="vjslider__slide item" data-id="15">
-                    <a href="" id="person-l" title="Personne L">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg"
-                            alt="Personne">
-                    </a>
-                </div> -->
-
+        <div class="vjslider col-md-10">
+            <div id="listing-profile" class="vjslider__slider owl-carousel">
             </div>
-            <nav class="carousel-nav">
+            <!-- Buttons (il you want) for the carsouel control -->
+
+            <!-- <nav class="carousel-nav">
                 <button data-prev>Prev</button>
                 <button data-next>Next</button>
                 <button data-start-loop>Start loop</button>
                 <button data-stop-loop>Stop loop</button>
-            </nav>
+            </nav> -->
         </div>
     </section>
-    <script src="./node_modules/vjslider/dist/vjslider.js"></script>
+    <!-- <footer id="footer">
+        <ul class="list-unstyled">
+            <li><a href="#">Plan du site</a></li>
+            <li><a href="#">Mentions légales</a></li>
+        </ul>
+        <p><span class="icon-icons-detailles-egypt-ailes-vautour icon-big-footer"></span></p>
+        <p>Copyright 2024 - Wild Code School </p>
+    </footer> -->
+    <script src="./scripts/common.js"></script>
     <script>const sliderOptions = {
             numberOfVisibleSlides: 10
         };
