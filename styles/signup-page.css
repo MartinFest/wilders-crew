@@ -152,4 +152,8 @@ form > textarea {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
