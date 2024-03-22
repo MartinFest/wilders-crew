@@ -19,8 +19,8 @@
 </head>
 
 <body class="not-home">
-    <header class="container">
-        <nav class="navbar">
+    <header class="container" id="header">
+        <!-- <nav class="navbar">
             <a href="home.html" class="logo">
                 <span class="icon-icons-bird"></span>
                 <span class="logo-nom-container"><span class="logo-nom">Wilders Crew</span>
@@ -33,42 +33,41 @@
             </ul>
             <a href="#" class="btn-login"><span class="icon-icons-egypt-pharaon-profil"></span>
                 Connexion</a>
-        </nav>
+        </nav> -->
     </header>
 
     <body>
-        <main>
-            <div class="container">
-                <h1>Créer mon espace recruteur</h1>
+        <span class="icon-icons-egypt-pharaon-face2"></span>
+        <main class="container">
+            <div class="container-espace-recruteur">
+                <h2>Créer mon espace recruteur</h2>
 
-
-                <form action="">
-                    <label for="pseudo">Pseudo</label>
-                    <input type="text" id="pseudo" name="pseudo">
-                    <br>
-                    <br>
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email">
-                    <br>
-                    <br>
-                    <label for="mot de passe">Mot de passe</label>
-                    <input type="text" id="mot de passe" name="mot de passe">
-                    <br>
-                    <br>
-                    <label for="confirmer mot de passe">Confirmation du mot de passe</label>
-                    <input type="text" id="confirmer le mot de passe" name="confirmer le mote de passe">
-                    <br>
-                    <br>
-                    <label for="nom de la société">Nom de la société</label>
-                    <input type="text" id="nom de la société" name="nom de la société">
-                    <br>
-                    <br>
-                    <div>
-                        <a class="button black" href="#">Créer mon compte</a>
-                    </div>
-
+                <table class="tableau-espace-recruteur">
+                    <form action="">
+                        <tr>
+                            <input type="text" id="nom" name="nom" placeholder="Nom">
+                            <br>
+                            <input type="text" id="prénom" name="prénom" placeholder="Prénom">
+                            <br>
+                            <input type="text" id="nom de la société" name="nom de la société"
+                                placeholder="Nom de la société">
+                            <br>
+                            <input type="text" id="email" name="email" placeholder="email">
+                            <br>
+                            <input type="text" id="mot de passe" name="mot de passe" placeholder="mot de passe">
+                            <br>
+                            <input type="text" id="confirmer le mot de passe" name="confirmer le mote de passe"
+                                placeholder="Confirmer le mot de passe">
+                            <br>
+                            <br>
+                            <div>
+                                <a class="button black" href="#">Créer mon compte</a>
+                            </div>
+                        </tr>
+                </table>
                 </form>
         </main>
+        <footer id="footer"></footer>
     </body>
 
 </html>
