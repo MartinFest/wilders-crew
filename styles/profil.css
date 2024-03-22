@@ -17,48 +17,14 @@ body {
 
 body>main {
     padding : 1.5rem 2rem 0rem 2rem;
-    /* display : grid;
-    grid-template-columns: repeat(4, 25%); */
 }
 
     /* -start---Picture - Name - Citation - Description----- */
 
-/* .profil-informations {
-    grid-column : 1/4;
-    grid-row : 1/3;
-    display : grid;
-    grid-template-columns : repeat(3, 1fr);
-    grid-template-rows : repeat(6, 16.5%);
-} */
-
-    /* #profil-picture {
-        grid-column : 1/2;
-        grid-row : 1/7;
-        width: 318px;
-        height: 318px;
-        border-radius: 50%;
-        background-image: url("/Assets/julien\ photo.jpg");
-        background-size: 350px;
-        justify-self: center; */
-        /* align-self: flex-end; */
-    /* } */
-
-    /* #profil-picture {
-        grid-column : 2/4;
-        grid-row : 1/3;
-    } */
-
-    /* #profil-picture>div {
+    #profil-picture {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    } */
-
-    /* #profil-picture>div>span>img {
-        width : 84px;
-        height : 114px;
-    } */
+        justify-content: center;
+    }
 
     #avatar-name {
         font-size: 100px;
@@ -78,8 +44,6 @@ body>main {
     }
 
     #profil-description {
-        /* grid-column : 2/4; */
-        /* grid-row : 4/7; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -90,31 +54,20 @@ body>main {
 
 /* -start---Diagram section---- */
 
-/* .diagram {
-    grid-column: 4/5;
-    grid-row: 1/4;
-    align-self: center;
-    justify-self: center;
-} */
+.diagram-container {
+    display: flex;
+    align-items: center;
+}
 
 .diagram>img {
-    width: 320px;
+    width: 100%;
 }
     
 /* Objectifs section */
-
-/* .final-bloc-profil {
-    grid-column : 1/4;
-    grid-row : 3/4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
     
     /* ---- Buttons - Reseaux ---- */
 
     .buttons-reseaux-blocs {
-        /* grid-column: 1/2; */
-        /* grid-row: 1/2; */
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -154,26 +107,6 @@ body>main {
 
     /* ----Objectif - Tag ---- */
 
-    /* .objectifs-tag-blocs {
-        grid-column: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        padding: 0rem 0rem 1.5rem 0rem;
-    } */
-    
-    /* .profil-objectifs {
-        display: flex;
-        flex-direction: column;
-    } */
-     
-    /*  #objectifs-blocs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    } */
-
     .profil-tags {
         display: flex;
         flex-direction: column;
@@ -205,106 +138,151 @@ body>main {
 /* Caroussel */
 
 .caroussel-section {
-    /* display: grid; */
-    grid-template-columns: repeat(4, 1fr);
     padding-top: 60px;
 }
 
 #caroussel-title {
-    /* grid-column: 1/2; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
     text-align: center;
     gap: 10px;
     padding: 0rem 0rem 0rem 2rem;
 }
 
-/* #position-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 #avatar-name-carousel {
     font-size: 70px;
-    /* padding-bottom: 200px; */
 }
 
 #line{
     border: 1px var(--primary-color) solid;
     opacity: 50%;
     width: 80px;
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 #other-wilders{
-    /* width: 100%; */
     font-size: 20px;
     padding: 1.5rem 0rem 0rem 0rem;
 }
 
     /* partie défilante */
 
-/* .vjslider {
-    grid-column: 2/6;
-    display: flex;
-    flex-direction: row;
-} */
-
-/* .vjslider>div:first-child {
-    overflow: hidden;
-    max-width: auto;
-} */
-
-/* .vjslider__slide{
-    width:100%;
-    float: left;
-    transform: translateX(-00px)
-} */
-
-/* .owl-carousel{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-} */
-
-/* .carousel-nav {
-    position: absolute;
-    justify-content: center;
-} */
-
-/* .item>a>img {
-    width : 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}  */
+.vjslider__slider {
+    width: 100%;
+}
 
 
 /* ----- Responsive part----- */
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1600px) {
+    .container-fluid {
+        /* height: 90vh; */
+        width: 90%;
+        margin-top: 5vh;
+        padding: 2rem;
+    }
     
+    #profil-picture {
+        align-items: center;
+    }
+    
+    #profil-picture>div {
+        width: 100%;
+        height: 201px;
+    }
+    
+    #title-name {
+        padding-right: 0;
+    }
+    
+    .buttons {
+        gap: 5px;
+    }
+    
+    
+    #caroussel-title {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    #other-wilders{
+        font-size: 15px;
+    }
+    
+    #avatar-name-carousel {
+        font-size: 50px;
+    }
 }
 
-@media screen and (max-width: 992px) {
-    
+@media screen and (max-width: 1440px) {
+
+    .container-fluid {
+        padding-bottom: calc(var(--bs-gutter-x)* 0.5);
+        height: 100%;        
+        width: 97%;
+        margin-top: 3vh;
+    }
+
+    #profil-picture>div {
+        width: 246px;
+        height: 246px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .container-fluid {
+        padding-bottom: calc(var(--bs-gutter-x)* 0.5);
+        height: 100%;        
+        width: 97%;
+        margin-top: 3vh;
+    }
+
+    #profil-picture>div {
+        width: 216px;
+        height: 216px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-fluid {
+        padding-bottom: calc(var(--bs-gutter-x)* 0.5);
+        height: 100%;        
+        width: 97%;
+        margin-top: 2vh;
+    }
+
+    #profil-picture>div {
+        width: 168px;
+        height: 168px;
+    }
+
+    .social-networks>ul {
+        gap: 15px;
+    }
+
+    .social-networks>ul>li>a>span {
+        font-size : 40px;
+    }
+
+    .caroussel-section {
+        padding-top: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     
     .container-fluid {
-        width: 100%;
         padding-bottom: calc(var(--bs-gutter-x)* 0.5);
+        height: 100%;
+        width: 97%;
+        margin-top: 3vh;
     }
     
     #profil-picture>div {
-        width: 280px;
-        height: 280px;
+        width: 120px;
+        height: 120px;
     }
 
     #profil-picture {
@@ -323,6 +301,7 @@ body>main {
     #title-name, #citation {
         display: flex;
         justify-content: center;
+        padding-right: 0;
     }
 
     .social-networks {
@@ -347,10 +326,23 @@ body>main {
 
     .caroussel-title {
         display: flex;
-        f
     }
 
     #line {
-        rotate: 0deg ;
+        transform: rotate(0deg); ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-fluid {
+        padding-bottom: calc(var(--bs-gutter-x)* 0.5);
+        height: 100%;
+        width: 97%;
+        margin-top: 3vh;
+    }
+
+    #profil-picture>div {
+        width: 350px;
+        height: 350px;
     }
 }

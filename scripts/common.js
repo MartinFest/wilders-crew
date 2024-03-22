@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (listingProfile.classList.contains("vjslider__slider")) {
                     returnProfile("div");
                     //puis on ajoute le script carousel aprés l'exécution de ce script
-                    const scriptCarousel = document.createElement(script);
+                    const scriptCarousel = document.createElement("script");
                     scriptCarousel.src = "./node_modules/vjslider/dist/vjslider.js";
                     document.body.appendChild(scriptCarousel);
                 } else {
