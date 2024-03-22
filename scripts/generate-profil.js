@@ -15,21 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 //modifier l'url des liens du header 
                 //quand on est dans une page qui est dans un sous dossier
-                const navbar = document.querySelector('.navbar');
-                const navbarLink2 = navbar.querySelectorAll('.nav-link');
+                // const navbar = document.querySelector('.navbar');
+                // const navbarLink2 = navbar.querySelectorAll('.nav-link');
                 // navbarLink.href = prepend(urlFile);
                 // console.log("navbarLink  " + navbarLink);
 
                 // Get all the link elements by their common class
-                const navbarLinks = navbar.getElementsByClassName('.nav-link');
-
+                // const navbarLinks = navbar.getElementsByClassName('.nav-link');
+                // console.log(navbarLinks.length);
                 // Prepend a string to the URLs of all links
-                for (let i = 0; i < navbarLinks.length; i++) {
-                    let originalUrl = navbarLinks[i].href;
-                    let newUrl = "../" + originalUrl;
-                    navbarLinks[i].href = newUrl;
-                }
-                console.log("urlFile " + urlFile);
+                // for (let i = 0; i < navbarLinks.length; i++) {
+                //     let originalUrl = navbarLinks[i].href;
+                //     let newUrl = "../" + originalUrl;
+                //     navbarLinks[i].href = newUrl;
+                //     console.log(newUrl);
+                // }
+                // console.log("urlFile " + urlFile);
                 
                 // for(const property in navbarLink){
                 //     console.log(`coucou ${property}: ${navbarLink[property]}`);
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const lastName = profile.lastname.toUpperCase();
                     profilImg.src = profilImgURL;
                     profilImg.alt = `${profile.firstname} ${lastName}`;
-                    console.log("profilImg " + profilImg);
+                    // console.log("profilImg " + profilImg);
                     /* H1 nom */
                     titleName.innerHTML = `${profile.firstname} ${lastName}`;
 
