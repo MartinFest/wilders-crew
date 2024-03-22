@@ -118,6 +118,7 @@ a [class^="icon-"] {
 
 .list-tag {
     gap: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .tag {
@@ -264,12 +265,16 @@ main>*:first-child {
 
 .profile,.profile-big {
     position: relative;
-    display: flex;
     overflow: hidden;
     /* object-fit: contain; */
     border-radius: var(--radius-huge);
 }
-
+.profile-big {
+    display: block;
+}
+.profile, {
+    display: flex;
+}
 .profile img {
     position: relative;
     object-fit: cover;
