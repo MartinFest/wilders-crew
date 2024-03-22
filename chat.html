@@ -42,38 +42,84 @@
             <aside id="bloc-conversation" class="col-md-3">
 
                 <div class="encart">
-                    <h3>Conversation</h3>
+                    <h3>Conversations</h3>
+                    <div id="global-conversation">
+                        <div class="conversation-content">
+                            <p>Jean-Michel PATOULACHI</p>
+                            <p class="time-chat">Lead developper chez Orange</p>
+                        </div>
+                        <div class="conversation-content">
+                            <p>Marcel HENRY</p>
+                            <p class="time-chat">Data analyst chez Bic</p>
+                        </div>
+                        <div class="conversation-content">
+                            <p>Jean-Eude CRACHIN</p>
+                            <p class="time-chat">Breton et fier de l'être</p>
+                        </div>
+                    </div>
                 </div>
             </aside>
 
-            <div class="col-md-6">
+            <div id="conversation" class="col-md-6">
                 <div class="column">
-                    <div class="chat1"> <img src="./Assets/julien photo.jpg">
-                        <p class="time-chat">21/03/2024 - 14h12</p>
-                        <p>Salut je m'appelle Joe Pesci, je dirige une boite spécialisée dans
-                            l'emballage de fromage à pate dure, ton profil m'intéresse.
-                        </p>
+
+                    <div class="encart  encart-photo-droite">
+                        <div class="profile">
+                            <img src="./images/portraits/portrait07.jpg">
+                        </div>
+                        <div class="message-content">
+                            <p class="time-chat">21/03/2024 - 14h12</p>
+                            <p>Salut je m'appelle Jean-Michel Patoulachi, je dirige une boite spécialisée</br> dans
+                                l'emballage de fromage à pate dure, ton profil m'intéresse.
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <div class="chat2">
-                        <p class="time-chat">21/03/2024 - 15h17</p>
-                        <p>Salut, super ça tombe bien, le fromage est un de mes hobby!</p><br><br>
+
+
+                    <div class="encart encart-photo-gauche">
+                        <div class="profile">
+                            <img src="images/portraits/julien-photo.jpg">
+                        </div>
+
+                        <div class="message-content">
+                            <p class="time-chat">21/03/2024 - 15h17</p>
+                            <p>Salut, super ça tombe bien, le fromage est un de mes hobby!
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <div class="chat3">
-                        <p class="time-chat">21/03/2024 - 17h41</p>
-                        <p>Ravi d'entendre ça, je me réjouis d'une éventuelle future colaboration.</p><br><br>
+
+
+                    <div class="encart  encart-photo-droite">
+                        <div class="profile">
+                            <img src="./images/portraits/portrait07.jpg">
+                        </div>
+
+                        <div class="message-content">
+                            <p class="time-chat">21/03/2024 - 17h41</p>
+                            <p>Ravi d'entendre ça, je me réjouis
+                                d'une éventuelle future colaboration.
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <br>
+
                     <textarea id="message-chat" placeholder="Votre message..." rows="6" cols="83"></textarea>
+                    <a href="" class="btn btn-default" title="Envoyer le message">
+                        Envoyer
+                    </a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" id="bloc-conversation">
                 <div class="encart">
-                    <h4>Business services</h4>
+                    <div class="recruteur">
+                        <img src="./images/logo-orange-business 1.png">
+                        <br>
+                        <br>
+                        <div class="profile">
+                            <img src="./images/portraits/portrait07.jpg">
+                        </div>
+                        <p>Jean-Michel PATOULACHI</p>
+                        <p class="time-chat">Lead developper chez Orange</p>
+                    </div>
                 </div>
             </div>
         </div>

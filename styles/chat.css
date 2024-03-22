@@ -1,15 +1,32 @@
-.encart {
+#bloc-conversation .encart {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 3rem;
-    height: 50vh;
+    /*height: 50vh; */
 }
 
-.chat1, .chat2, .chat3, #message-chat {
-    background-color: white;
+#conversation .encart, #message-chat {
+    /*background-color: white;
     border-radius: 20px;
-    padding: 8px;
+    padding: 8px;*/
     margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+#conversation .encart.encart-photo-droite {
+    flex-direction: row-reverse;
+}
+
+.conversation-content{
+    background-color: var(--grey-light-2);
+    border-radius: var(--radius-big);
+    padding: .25rem .5rem;
+}
+
+#global-conversation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .column {
@@ -25,15 +42,42 @@
     border: none;
 }
 
+
+.time-chat {
+    color:  #906044;
+}
+
+/*.chat3 img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
 .chat1 img {
     width: 84px;
     height: 84px;
     border-radius: 50%;
-
+    object-fit: cover;
+    margin-right: 20px;
 }
 
-.chat1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.chat2 img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+} */
+
+#conversation .encart.encart-photo-droite, .profile {
+    margin-left: 20px;
 }
+
+#conversation .encart.encart-photo-gauche, .profile {
+    margin-right: 20px;
+}
+
+
+
