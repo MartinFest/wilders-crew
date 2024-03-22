@@ -21,21 +21,7 @@
 
 <body>
 
-    <header class="container">
-        <nav class="navbar">
-            <a href="home.html" class="logo">
-                <span class="icon-icons-bird"></span>
-                <span class="logo-nom-container"><span class="logo-nom">Wilders Crew</span>
-                    <small class="signature-logo">Les super wilders</small></span>
-            </a>
-            <ul class="navbar-nav list-unstyled">
-                <li><a href="interne.html" class="taf">Accueil</a></li>
-                <li><a href="#">Notre promo</a></li>
-                <li><a href="#">Messagerie</a></li>
-            </ul>
-            <a href="#" class="btn-login"><span class="icon-icons-egypt-pharaon-profil"></span>
-                Connexion</a>
-        </nav>
+    <header class="container" id="header">
     </header>
 
     <main class="container-fluid">
@@ -45,25 +31,18 @@
         <div class="row">
             <div class="col-md-9">
                 <section class="profil-informations row">
-                    <section id="profil-picture" class="col-md-3">
-                        <div class="profile profile-big">
-                            <img src="./images/portraits/julien-photo.jpg" alt="Photo de Julien" />
-                            <!-- <span id="profil-picture" aria-label="Profil picture">
-                        </span> -->
+                    <div id="profil-picture" class="col-md-3">
+                        <div class="profile-big">
+                            <img src="./images/portraits/julien-photo.jpg" alt="Photo de Julien">
                         </div>
-                    </section>
+                    </div>
                     <section id="profil-description" class="col-md-9">
-                        <div id="title-name">
+                            <h1 id="title-name">
                             <span class="icon-icons-egypt-pharaon-profil" id="avatar-name" aria-label="Avatar egyptien">
-                                <!-- <img src="/Assets/vector.svg" alt="Egyptian avatar"> -->
                             </span>
-                            <h1>
                                 <strong>Julien Deniaud</strong>
                             </h1>
-                        </div>
-                        <p id="citation">
-                            <strong>"Code caféine, bugs éliminés !"</strong>
-                        </p>
+                        <p id="citation">"Code caféine, bugs éliminés !"</p>
                         <p id="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo officia commodi autem sit.
                             Quia
@@ -117,24 +96,6 @@
                             </ul>
                         </section>
                     </section>
-                    <!-- <section class="objectifs-tag-blocs">
-                        <section class="profil-objectifs">
-                            <h2>
-                                Objectifs
-                            </h2>
-                            <section id="objectifs-blocs">
-                                <ul id="objectifs-first-bloc">
-                                    <li>J'ai un premier objectif cool</li>
-                                    <li>J'ai un premier objectif cool</li>
-                                    <li>J'ai un premier objectif cool</li>
-                                </ul>
-                                <ul id="objectifs-second-bloc">
-                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
-                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
-                                    <li>Et tous mes autres objectifs sont cool aussi !</li>
-                                </ul>
-                            </section>
-                    </section> -->
                     <section class="profil-tags col-md-9">
                         <h2>
                             Personnalité et hobbies
@@ -152,7 +113,7 @@
 
             <!-- Diagram section -->
 
-            <section class="col-md-3">
+            <section class="diagram-container col-md-3">
                 <div class="diagram">
                     <img src="./images/Graphique.png" alt="Graphique de connaissances">
                 </div>
@@ -167,7 +128,6 @@
             <div id="avatar-name-2">
                 <span class="icon-icons-egypt-pharaon-profil" id="avatar-name-carousel"
                     aria-label="Avatar egyptien"></span>
-                <!-- <img src="/Assets/vector.svg" alt="Egyptian avatar"> -->
             </div>
             <h2 id="other-wilders">
                 Les autres Wilders
@@ -181,24 +141,8 @@
         <div class="vjslider col-md-10">
             <div id="listing-profile" class="vjslider__slider owl-carousel">
             </div>
-            <!-- Buttons (il you want) for the carsouel control -->
-
-            <!-- <nav class="carousel-nav">
-                <button data-prev>Prev</button>
-                <button data-next>Next</button>
-                <button data-start-loop>Start loop</button>
-                <button data-stop-loop>Stop loop</button>
-            </nav> -->
         </div>
     </section>
-    <!-- <footer id="footer">
-        <ul class="list-unstyled">
-            <li><a href="#">Plan du site</a></li>
-            <li><a href="#">Mentions légales</a></li>
-        </ul>
-        <p><span class="icon-icons-detailles-egypt-ailes-vautour icon-big-footer"></span></p>
-        <p>Copyright 2024 - Wild Code School </p>
-    </footer> -->
     <script src="./scripts/common.js"></script>
     <script>const sliderOptions = {
             numberOfVisibleSlides: 10
