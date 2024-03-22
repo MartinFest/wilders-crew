@@ -1,48 +1,131 @@
+h2 {
+    margin: 0rem 0rem 1.5rem 0rem;
+    font-weight: var(--font-weight-bold-serif);
+    font-style: normal;
+}
 
-   main {
-       height: 80vh;
-       display: flex;
-       flex-direction: center;
-       align-items: center;
-       justify-content: space-evenly;
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-   }
+.container-login {
+    height: 40vh;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: var(--radius-big);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+}
 
-   .container-login {
-       height: 40vh;
-       width: 30%;
-       border: 1px solid black;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       font-size: medium;
-       text-align: center;
-   }
+.container-creation-de-compte {
+    height: 40vh;
+    width: 30%;
+    border-radius: var(--radius-big);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+}
 
-   .container-creation-de-compte {
-       height: 40vh;
-       width: 30%;
-       border: 1px solid black;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       font-size: medium;
-       text-align: center;
-   }
+.container-espace-recruteur {
+    height: 50vh;
+    width: 50%;
+    border-radius: var(--radius-big);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+}
 
-   #gap {
-       display: flex;
-       gap: 50%;
-       justify-content: center;
-   }
+#gap {
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+}
 
-   .button {
-       padding: 10px;
-       text-decoration: none;
-       background-color: black;
-       color: white;
-       font-size: large;
-       border-radius: 10px;
-   }
+.button {
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.icon-icons-egypt-pharaon-face2 {
+    font-size: 80px;
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-icons-egypt-oeil {
+    position: absolute;
+    font-size: 200px;
+    bottom: 0;
+    opacity: 50%;
+
+
+
+
+
+
+
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+    .icon-icons-egypt-pharaon-face2 {
+        top: 15vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .navbar-nav a {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        padding: 1rem 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .container-login {
+        flex-direction: column;
+    }
+
+    .container-creation-de-compte {
+        flex-direction: column;
+    }
+
+    .icon-icons-egypt-pharaon-face2 {
+        top: 15vh;
+    }
+
+}
+
+
+@media screen and (min-width: 1900px) {}
